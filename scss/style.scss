@@ -1,0 +1,61 @@
+@import "reset.scss";
+//=====підключили шрифт=====//
+
+//=====підключили шрифт=====//
+
+//=====зробили змінні для кольорів на сайті=====//
+
+//=====зробили змінні для кольорів на сайті=====//
+
+
+//=====зробили сітку для адаптиву (брейкпоінти)=====//
+[class*="__container"]{
+    max-width: 1046px;
+    margin: 0 auto;
+}
+@media (max-width: 1075.98px ){
+    [class*="__container"] {
+        max-width: 970px;
+   }
+}
+@media (max-width: 991.98px){
+    [class*="__container"] {
+        max-width: 750px;
+   }
+}
+@media (max-width: 767.98px){
+    [class*="__container"] {
+        max-width: none;
+        padding: 0px 15px;
+   }
+}
+//=====зробили сітку для адаптиву (брейкпоінти)=====//
+
+//=====загальні стилі для body, page і wrapper=====//
+body{
+    
+}
+a{
+    
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.page{
+    flex: 1 1 auto;
+}
+
+._button{
+
+}
+._input{
+
+}
+
+//=====загальні стилі для body, page і wrapper=====//
+
+

@@ -1,0 +1,28 @@
+html,body {
+	line-height: 1;
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+button{
+	border: none;
+}
+a:active, 
+a:hover,  
+a {
+  text-decoration: none;
+  color: #000;
+}
+input:active,
+input{
+	border:  0;
+}
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
