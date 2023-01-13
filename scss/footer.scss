@@ -1,0 +1,132 @@
+.footer {
+    background: #333333;
+    border-radius: 25px 25px 0px 0px;
+}
+.item__top {
+    position: absolute;
+    z-index: 10;
+    top: -36px;
+    right: 0;
+    padding: 28px 34px 29px 33px;
+    background: $gradient;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer__container {
+    padding: 80px 25px 44px ;
+    position: relative;
+}
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.top-footer__logo {
+    font-size: 17px;
+    font-family: $addFont3;
+    display: flex;  
+    padding: 8px 20px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.top-footer__body {
+    color: #fff;
+}
+.top-footer__numbers {
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 31px;
+}
+.top-footer__translate {
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+}
+.top-footer__translateRU,
+.top-footer__translateUA{
+    color: #fff;
+}
+.top-footer__translate>*:not(:last-child){
+    margin-right: 8px;
+}
+.top-footer__translate ._active {
+    background: $gradient;
+    color: #000;
+    padding: 9px 8px ;
+    border-radius: 10px;
+}
+.top-footer__list {
+    font-size: 16px;
+    margin-right: 203px;
+}
+.top-footer__list > *:not(:last-child){
+    margin-bottom: 20px;
+}
+.list-top-footer__link {
+    color: #fff;
+}
+.bottom-footer {
+    margin-top: 163px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.bottom-footer__link,
+.bottom-footer__link:hover,
+.bottom-footer__link:active {
+    color: #fff;
+    text-decoration: underline;
+}
+.bottom-footer ._mb {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .top-footer__list {
+        font-size: 16px;
+        margin-right: 0px;
+    }
+    .bottom-footer {
+      font-size: 13px;
+    }
+}
+@media (max-width: 767.98px) {
+    .footer__container{
+        padding: 90px 60px 150px;
+    }
+    .item__top {
+        right: 25px;
+    }
+    .top-footer__logo{
+        display: none;
+    }
+    .top-footer__translate{
+        display: none;
+    }
+    .bottom-footer ._pc {
+      display: none;
+    }
+    .bottom-footer ._mb {
+        display: block;
+      }
+    .bottom-footer{
+        margin-top: 0px;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .bottom-footer__link{
+        margin-top: 9px;
+    }
+    .bottom-footer__text{
+        margin-top: 55px;
+    }
+}
+@media (max-width: 549.98px) {
+    .top-footer__list{
+        display: none;
+    }
+    .top-footer__numbers {
+        font-size: 25px;
+    }
+}

@@ -4,21 +4,727 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Credit24</title>
     <link rel="stylesheet" type="text/css" href="/css/fonticons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container"></div>
+        <header class="header lock-padding">
+            <div class="header__container">
+                <a href="#" class="header__logo ">Credit24</a>
+                <div class="header__menu menu">
+                    <div class="menu__icon"> <!--Бургер -->
+                        <span></span>
+                    </div>
+                    <div class="menu__body menu">
+                        <nav class="menu__navigation">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a data-goto=".page__our-partners" href="#" class="menu__link"><span>Наши </span>Партнеры</a>
+                                </li>
+                                <li  class="menu__item">
+                                    <a data-goto=".page__workScheme" href="#" class="menu__link">Схема работы</a>
+                                </li>
+                                <li class="menu__item_mobile">
+                                    <a data-goto=".page__ourAdvantages" href="#" class="menu__link">Почему нам доверяют</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a data-goto=".page__reviews" href="#" class="menu__link">Отзывы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a data-goto=".page__conditions" href="#" class="menu__link">Условия кредитования</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a data-goto=".page__question" href="#" class="menu__link">Вопросы - ответы </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu__translate _translate">
+                            <a href="#" class="menu__translateRU _active">RU</a>
+                            <a href="#" class="menu__translateUA">UA</a>
+                        </div>
+                        <div class="menu__numbers numbers-menu">
+                            <div class="numbers-menu__number">(050) 837-23-25</div> 
+                            <div class="numbers-menu__number">(096) 052-78-75</div>
+                            <div class="numbers-menu__number">(044) 585-59-66</div>
+                        </div>
+                        <div class="menur__links links-menu">
+                            <a href="" class="links-menu__link links-menu__link_1">Договора и лицензии</a>
+                            <div class="links-menu__text">Киев, бульв. Леси Украинки, 26</div>
+                            <a href="" class="links-menur__link links-menu__link_2">Смотреть на карте</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <main class="page">
-
+            <section class="page__main-block main-block">
+                <div class="main-block__container">
+                    <div class="main-block__content1 content1-main-block">
+                        <div class="content1-main-block__text">Онлайн. Без проверок! </div>
+                        <h2 class="content1-main-block__title">Кредит от 1000 до 250 000 грн</h2>
+                        <div class="content1-main-block__items">
+                            <div class="content1-main-block__item item-content1-main-block">
+                                <div class="item-content1-main-block__value">18</div>
+                                <div class="item-content1-main-block__text">Минимальный возраст заемщика</div>
+                            </div>
+                            <div class="content1-main-block__item item-content1-main-block">
+                                <div class="item-content1-main-block__value">99%</div>
+                                <div class="item-content1-main-block__text">Вероятность получения кредита</div>
+                            </div>
+                            <div class="content1-main-block__item item-content1-main-block">
+                                <div class="item-content1-main-block__value">2:00</div>
+                                <div class="item-content1-main-block__text">Минуты на получение денег</div>
+                            </div>
+                        </div>
+                        <div class="content1-main-block__button _button">Оформить кредит</div>
+                    </div>
+                    <div class="main-block__image">
+                        <img src="/img/mainBlock/main-girl.png" alt="Main-girl">
+                    </div>
+                    <div class="main-block__content2 content2-main-block">
+                        <h2 class="content2-main-block__title">Акционная ставка </h2>
+                        <div class="content2-main-block__text">Успей оставить заявку и получи кредит под 0% годовых</div>
+                        <div class="content2-main-block__items">
+                            <div class="content2-main-block__item item-content2-main-block">
+                                <div class="item-content2-main-block__value">00</div>
+                                <div class="item-content2-main-block__text">Дней</div>
+                            </div>
+                            <div class="content2-main-block__item item-content2-main-block">
+                                <div class="item-content2-main-block__value">23</div>
+                                <div class="item-content2-main-block__text">Часов</div>
+                            </div>
+                            <div class="content2-main-block__item item-content2-main-block">
+                                <div class="item-content2-main-block__value">52</div>
+                                <div class="item-content2-main-block__text">Минут</div>
+                            </div>
+                            <div class="content2-main-block__item item-content2-main-block">
+                                <div class="item-content2-main-block__value">22</div>
+                                <div class="item-content2-main-block__text">Секунд</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__our-partners our-partners">
+                <div class="our-partners__container">
+                    <h2 class="our-partners__title _title">Наши партнеры</h2>
+                    <div class="our-partners-slider swiper">
+                        <div class="our-partners-slider__wrapper swiper-wrapper">
+                        <!-- Slides -->
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner1.jpg" alt="Parner1">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner2.jpg" alt="Parner2">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner3.jpg" alt="Parner3">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner4.jpg" alt="Parner4">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner5.jpg" alt="Parner5">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner6.jpg" alt="Parner6">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner7.jpg" alt="Parner7">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner8.jpg" alt="Parner8">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner9.jpg" alt="Parner9">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner10.jpg" alt="Parner10">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner11.jpg" alt="Parner11">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner12.jpg" alt="Parner12">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner13.jpg" alt="Parner13">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner14.jpg" alt="Parner14">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner15.jpg" alt="Parner15">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner16.jpg" alt="Parner16">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner17.jpg" alt="Parner17">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner18.jpg" alt="Parner18">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner19.jpg" alt="Parner19">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner20.jpg" alt="Parner20">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner21.jpg" alt="Parner21">
+                                </div>
+                            </div>
+                            <div class="our-partners-slider__slide swiper-slide">
+                                <div class="our-partners-slider__image">
+                                    <img src="/img/ourPartners/partner22.jpg" alt="Parne22">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="our-partners__swiperButtonPrev swiperButtonPrev">
+                        <img src="/img/ourPartners/prevArrow.svg" alt="Prev">
+                    </div>
+                    <div class="our-partners__swiperButtonNext swiperButtonNext">
+                        <img src="/img/ourPartners/nextArrow.svg" alt="Next">
+                    </div>
+                </div>
+            </section>
+            <section class="page__workScheme workScheme">
+                <div class="workScheme__container">
+                    <h2 class="workScheme__title _title">Схема работы</h2>
+                    <div class="workScheme__row">
+                        <div class="workScheme__items">
+                            <div class="workScheme__item">
+                                <div class="workScheme__value">01</div>
+                                <div class="workScheme__text">Заполните онлайн-заявку на нашем сайте</div>
+                            </div>
+                            <div class="workScheme__item">
+                                <div class="workScheme__value">02</div>
+                                <div class="workScheme__text">Отвечаете на звонок в течение 10 минут</div>
+                            </div>
+                            <div class="workScheme__item">
+                                <div class="workScheme__value">03</div>
+                                <div class="workScheme__text">Получаете кредит или кредитную карту</div>
+                            </div>
+                        </div>
+                        <a class="workScheme__button _button">Оформить кредит</a>
+                    </div>
+                </div>
+            </section>
+            <section class="page__ourAdvantages ourAdvantages">
+                <div class="ourAdvantages__container">
+                    <h2 class="ourAdvantages__title _title">Почему мы</h2>
+                    <div class="ourAdvantages__items">
+                        <div class="ourAdvantages__item item-ourAdvantages ">
+                            <div class="item-ourAdvantages__body  item-ourAdvantages__body_1">
+                                <div class="item-ourAdvantages__icon">
+                                    <img src="/img/ourAdventages/item1.svg" alt="Money">
+                                </div>
+                                <div class="item-ourAdvantages__text">Понад 1 млн. оформлених кредитів</div>
+                            </div>
+                        </div>
+                        <div class="ourAdvantages__item item-ourAdvantages ">
+                            <div class="item-ourAdvantages__body item-ourAdvantages__body_2">
+                                <div class="item-ourAdvantages__icon">
+                                    <img src="/img/ourAdventages/item2.svg" alt="Star">
+                                </div>
+                                <div class="item-ourAdvantages__text">Більше 15 років на ринку</div>
+                            </div>
+                        </div>
+                        <div class="ourAdvantages__item item-ourAdvantages ">
+                            <div class="item-ourAdvantages__body item-ourAdvantages__body_1">
+                                <div class="item-ourAdvantages__icon">
+                                    <img src="/img/ourAdventages/item3.svg" alt="Lock">
+                                </div>
+                                <div class="item-ourAdvantages__text">Безопасная сделка</div>
+                            </div>
+                        </div>
+                        <div class="ourAdvantages__item item-ourAdvantages ">
+                            <div class="item-ourAdvantages__body item-ourAdvantages__body_2">
+                                <div class="item-ourAdvantages__icon">
+                                    <img src="/img/ourAdventages/item4.svg" alt="Bank">
+                                </div>
+                                <div class="item-ourAdvantages__text">Провідні банки та МФО України</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__announcement announcement">
+                <div class="announcement__container">
+                    <div class="announcement__content content-announcement">
+                        <h2 class="content-announcement__title">Розыгрыш</h2>
+                        <div class="content-announcement__bold-text">Заполни заявку и получи стильный смартфон или ноутбук</div>
+                        <div class="content-announcement__text">Eжемесячный розыгрыш<br> 3х смартфонов Samsung Galaxy S9<br> и ноутбука yoga 720-15</div>
+                        <div class="content-announcement__button _button">Заполнить заявку</div>
+                    </div>
+                    <div class="announcement__image">
+                        <img src="/img/announcement/announcement.png" alt="Announcement">
+                    </div>
+                    <div class="announcement__button _button">Заполнить заявку</div>
+                </div>
+            </section>
+            <section class="page__reviews reviews">
+                <div class="reviews__container">
+                    <h2 class="reviews__title _title"> Отзывы</h2>
+                    <div class="reviews-slider swiper">
+                        <div class="reviews-slider__wrapper swiper-wrapper">
+                            <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/firstUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Программист</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Взял кредит, хотя без доверия к банку. И очень удивлен, процентные ставки поразили. <br><br>Если придется еще взять, конечно сюда обращусь. Очень выгодно!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/firstUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Программист</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Взял кредит, хотя без доверия к банку. И очень удивлен, процентные ставки поразили. <br><br>Если придется еще взять, конечно сюда обращусь. Очень выгодно!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/firstUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Программист</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Взял кредит, хотя без доверия к банку. И очень удивлен, процентные ставки поразили. <br><br>Если придется еще взять, конечно сюда обращусь. Очень выгодно!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/firstUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Программист</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Взял кредит, хотя без доверия к банку. И очень удивлен, процентные ставки поразили. <br><br>Если придется еще взять, конечно сюда обращусь. Очень выгодно!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/firstUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Программист</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Взял кредит, хотя без доверия к банку. И очень удивлен, процентные ставки поразили. <br><br>Если придется еще взять, конечно сюда обращусь. Очень выгодно!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/firstUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Программист</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Взял кредит, хотя без доверия к банку. И очень удивлен, процентные ставки поразили. <br><br>Если придется еще взять, конечно сюда обращусь. Очень выгодно!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/firstUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Программист</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Взял кредит, хотя без доверия к банку. И очень удивлен, процентные ставки поразили. <br><br>Если придется еще взять, конечно сюда обращусь. Очень выгодно!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/firstUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Программист</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Взял кредит, хотя без доверия к банку. И очень удивлен, процентные ставки поразили. <br><br>Если придется еще взять, конечно сюда обращусь. Очень выгодно!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/firstUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Программист</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Взял кредит, хотя без доверия к банку. И очень удивлен, процентные ставки поразили. <br><br>Если придется еще взять, конечно сюда обращусь. Очень выгодно!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/firstUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Программист</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Взял кредит, хотя без доверия к банку. И очень удивлен, процентные ставки поразили. <br><br>Если придется еще взять, конечно сюда обращусь. Очень выгодно!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/secondUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Менеджер</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Таким образом сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__body">
+                                        <div class="item-reviews__user user-item-reviews">
+                                            <div class="user-item-reviews__icon">
+                                                <img src="/img/reviews/secondUser.svg" alt="User 1">
+                                            </div>
+                                            <div class="user-item-reviews__user-information user-infornation-item-reviews">
+                                                <div class="user-infornation-item-reviews__name">Михаил Новиков </div>
+                                                <div class="user-infornation-item-reviews__city">г.Харьков</div>
+                                                <div class="user-infornation-item-reviews__job">Менеджер</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-reviews__review">
+                                            Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности требуют определения и уточнения форм развития.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="reviews__swiper-pagination swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="reviews__swiperButtonPrev swiperButtonPrev">
+                        <img src="/img/reviews/reviewsPrevButton.svg" alt="Prev">
+                    </div>
+                    <div class="reviews__swiperButtonNext swiperButtonNext">
+                        <img src="/img/reviews/reviewsNextButton.svg" alt="Next">
+                    </div>
+                </div>
+            </section>
+            <div class="page__ourClients ourClients">
+                <div class="ourClients__container">
+                    <div class="ourClients__content">
+                        <div class="ourClients__value">250 000+</div>
+                        <div class="ourClients__text">Клиетов воспользовались нашими услугами</div>
+                    </div>
+                    <div class="ourClients__image">
+                        <img src="/img/ourClients/clients.png" alt="Clients">
+                    </div>
+                </div>
+            </div>
+            <section  class="page__conditions conditions">
+                <div class="conditions__container">
+                    <div class="conditions__image">
+                        <img src="/img/conditions/girl-conditions.png" alt="">
+                    </div>
+                    <div class="conditions__content">
+                        <h2 class="conditions__title _title">Условия кредитования</h2>
+                        <ul class="conditions__list">
+                            <li class="conditions__item">Сумма кредита или кредитного лимита от 500 до 500 000 грн.</li>
+                            <li class="conditions__item">Все регионы Украины кроме АРК</li>
+                            <li class="conditions__item">Срок от 61 дня до 5 лет</li>
+                            <li class="conditions__item">Ставка от 0,01%</li>
+                            <li class="conditions__item">Возраст от 18 до 79 лет</li>
+                            <li class="conditions__item">Кредит на любые цели</li>
+                            <li class="conditions__item">Без залога и поручителей</li>
+                            <li class="conditions__item">Максимальная годовая процентная ставка, включающая ссудный процент, а также все остальные комиссии и расходы за год - не более 29,99%</li>
+                        </ul>
+                        <a href="#popup_1" class="conditions__button _button popup-link">Кредитный калькулятор</a>
+                    </div>
+                </div>
+            </section>
+            <section class="page__question question">
+                <div class="question__container">
+                    <h2 class="question__title _title">Вопросы- ответы </h2>
+                    <div class="question__items">
+                        <div class="question__item item-question">
+                            <div class="item-question__body">
+                                <div class="item-qustion__visible-body">
+                                    <div class="item-question__text">Вероятность получения кредитной карты или кредита?</div>
+                                    <div class="item-question__icon">
+                                        <img src="/img/questions/expandArrow.svg" alt="Arrow">
+                                    </div>
+                                </div>
+                                <div class="item-question__subtext">При оформлении кредитной карты или кредита через сервис credit24.org.ua Вы не оплачиваете НИКАКИХ дополнительных комиссий.</div>
+                            </div>
+                        </div>
+                        <div class="question__item item-question">
+                            <div class="item-question__body">
+                                <div class="item-qustion__visible-body">
+                                    <div class="item-question__text">Как быстро я получу кредитную карту или кредит?</div>
+                                    <div class="item-question__icon">
+                                        <img src="/img/questions/expandArrow.svg" alt="Arrow">
+                                    </div>
+                                </div>
+                                <div class="item-question__subtext">При оформлении кредитной карты или кредита через сервис credit24.org.ua Вы не оплачиваете НИКАКИХ дополнительных комиссий.</div>
+                            </div>
+                        </div>
+                        <div class="question__item item-question">
+                            <div class="item-question__body">
+                                <div class="item-qustion__visible-body">
+                                    <div class="item-question__text">Комиссия за оформление кредитной карты или кредита?</div>
+                                    <div class="item-question__icon">
+                                        <img src="/img/questions/expandArrow.svg" alt="Arrow">
+                                    </div>
+                                </div>
+                                <div class="item-question__subtext">При оформлении кредитной карты или кредита через сервис credit24.org.ua Вы не оплачиваете НИКАКИХ дополнительных комиссий.</div>
+                            </div>
+                        </div>
+                        <div class="question__item item-question _mobile__unvisible">
+                            <div class="item-question__body">
+                                <div class="item-qustion__visible-body">
+                                    <div class="item-question__text">На какие цели я могу использовать кредитные средства?</div>
+                                    <div class="item-question__icon">
+                                        <img src="/img/questions/expandArrow.svg" alt="Arrow">
+                                    </div>
+                                </div>
+                                <div class="item-question__subtext">При оформлении кредитной карты или кредита через сервис credit24.org.ua Вы не оплачиваете НИКАКИХ дополнительных комиссий.</div>
+                            </div>
+                        </div>
+                        <div class="question__item item-question _mobile__unvisible">
+                            <div class="item-question__body">
+                                <div class="item-qustion__visible-body">
+                                    <div class="item-question__text">Какова окончательная процентная ставка по кредиту?</div>
+                                    <div class="item-question__icon">
+                                        <img src="/img/questions/expandArrow.svg" alt="Arrow">
+                                    </div>
+                                </div>
+                                <div class="item-question__subtext">При оформлении кредитной карты или кредита через сервис credit24.org.ua Вы не оплачиваете НИКАКИХ дополнительных комиссий.</div>
+                            </div>
+                        </div>
+                        <div class="question__item item-question _mobile__unvisible">
+                            <div class="item-question__body">
+                                <div class="item-qustion__visible-body">
+                                    <div class="item-question__text">Как минимизировать стоимость обслуживания кредита?</div>
+                                    <div class="item-question__icon">
+                                        <img src="/img/questions/expandArrow.svg" alt="Arrow">
+                                    </div>
+                                </div>
+                                <div class="item-question__subtext">При оформлении кредитной карты или кредита через сервис credit24.org.ua Вы не оплачиваете НИКАКИХ дополнительных комиссий.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question__more-qustions more-qustions">Больше вопросов</div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
-            <div class="footer__container"></div>
+            <div class="footer__container">
+                <a data-goto=".header" href="#" class="item__top menu__link">
+                    <img src="/img/footer/ArrowTop.svg" alt="Вверх">
+                </a>
+                <div class="footer__top top-footer">
+                    <a href="#" class="top-footer__logo ">Credit24</a>
+                    <div class="top-footer__body">
+                        <div class="top-footer__numbers">
+                            <div class="top-footer__number">(050) 837-23-25</div> 
+                            <div class="top-footer__number">(096) 052-78-75</div>
+                            <div class="top-footer__number">(044) 585-59-66</div>
+                        </div>
+                        <div class="top-footer__translate">
+                            <a href="#" class="top-footer__translateRU _active">RU</a>
+                            <a href="#" class="top-footer__translateUA ">UA</a>
+                        </div>
+                    </div>
+                    <ul class="top-footer__list list-top-footer">
+                        <li class="list-top-footer__item">
+                            <a data-goto=".page__our-partners"  href="#" class="menu__link list-top-footer__link">Наши партнеры</a>
+                        </li>
+                        <li class="list-top-footer__item">
+                            <a data-goto=".page__workScheme" href="#" class="menu__link list-top-footer__link">Схема работы</a>
+                        </li>
+                        <li class="list-top-footer__item">
+                            <a  data-goto=".page__reviews" href="#" class="menu__link list-top-footer__link">Отзывы</a>
+                        </li>
+                        <li class="list-top-footer__item">
+                            <a data-goto=".page__conditions" href="#" class="menu__link list-top-footer__link">Условия кредитования</a>
+                        </li>
+                        <li class="list-top-footer__item">
+                            <a data-goto=".page__question" href="#" class="menu__link list-top-footer__link">Вопросы- ответы </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom bottom-footer">
+                    <div class="bottom-footer__text _pc" >2022. Credit24. Все права защищены</div>
+                    <a href="#" class="bottom-footer__link">Договора и лицензии</a>
+                    <a href="#" class="bottom-footer__link _pc">Смотреть на карте</a>
+                    <div class="bottom-footer__text ">Киев, бульв. Леси Украинки, 26</div>
+                    <a href="#" class="bottom-footer__link _mb">Смотреть на карте</a>
+
+                </div>
+            </div>
         </footer>
     </div>
+    <div id="popup_1" class="popup popup_1">
+        <div class="popup__body">
+            <div class="popup__content">
+                <buttom id="popup__close" class="popup__close close-popup">
+                    <img src="/img/forPop-up/closePop-up.svg" alt="Close">
+                </buttom>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/downList.js"></script>
+    <script src="js/slideTop.js"></script>
+    <script src="js/pop-pups.js"></script>
 </body>
 </html>
+
+
